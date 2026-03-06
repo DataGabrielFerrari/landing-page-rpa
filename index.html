@@ -1,0 +1,421 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta
+    name="description"
+    content="Automatize a oferta de lances e a geração de boletos com evidências, organização de arquivos e resumo por e-mail."
+  />
+  <meta name="theme-color" content="#c8102e" />
+  <title>Automação Operacional | Boletos e Lances</title>
+
+  <!-- PERFORMANCE: conexões antecipadas para thumbnail/vídeo -->
+  <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+  <link rel="preconnect" href="https://i.ytimg.com" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+  <div class="container header__inner">
+
+    <!-- BOTÃO MOBILE -->
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="mobileNav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU DESKTOP / MOBILE -->
+    <nav class="nav nav--pills" id="mobileNav" aria-label="Navegação principal">
+      <a class="nav__btn" href="#solucoes">Soluções</a>
+      <a class="nav__btn" href="#planos">Planos</a>
+      <a class="nav__btn" href="#como-funciona">Como funciona</a>
+      <a class="nav__btn" href="#sobre">Sobre mim</a>
+    </nav>
+  </div>
+</header>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <!-- COPY: promessa principal -->
+            <div class="badge">Recupere dias ou semanas de trabalho por mês</div>
+
+            <h1>Não perca mais tempo ofertando lance e gerando boletos manualmente todos os meses</h1>
+
+            <p class="lead">
+              Você envia a planilha, concede permissão de editor, informa as credenciais de acesso
+              e define quais abas devem ser processadas. O robô executa os fluxos nas plataformas durante o mês,
+              registra evidências, organiza os arquivos e envia um resumo por e-mail ao final da execução.
+            </p>
+
+
+
+            <div class="actions">
+              <!-- LOG: trocar href pelo link real do WhatsApp -->
+              <a class="btn btn--primary" id="ctaWhatsappHero" href="#" rel="nofollow">
+                🤖 Quero automatizar
+              </a>
+              <a class="btn btn--ghost" href="#beneficios">Ver benefícios</a>
+            </div>
+          </div>
+
+          <div class="card" id="demo">
+            <p class="demo__title">Veja a automação em funcionamento</p>
+
+            <button
+              class="thumb"
+              id="videoThumb"
+              type="button"
+              aria-label="Reproduzir vídeo da automação"
+            >
+              <img id="ytThumbImg" alt="Prévia do vídeo da automação" loading="lazy" />
+              <span class="play" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS DIRETOS -->
+    <section class="section section--soft" id="beneficios">
+      <div class="container">
+        <div class="section__head">
+          <h2>O que a automação resolve na prática</h2>
+          <p>
+            Menos operação manual, menos retrabalho e mais controle sobre um processo que se repete todos os meses.
+          </p>
+        </div>
+
+        <div class="solutions4">
+          <article class="scard">
+            <div class="scard__icon" aria-hidden="true">⏱️</div>
+            <div class="scard__title">Mais tempo operacional</div>
+            <div class="scard__desc">
+              Reduza horas ou até dias gastos em tarefas repetitivas que consomem sua rotina todos os meses.
+            </div>
+            <div class="scard__tag">Ganho real de tempo</div>
+          </article>
+
+          <article class="scard">
+            <div class="scard__icon" aria-hidden="true">📋</div>
+            <div class="scard__title">Processo padronizado</div>
+            <div class="scard__desc">
+              O fluxo é executado sempre da mesma forma, com mais consistência e menos dependência de operação manual.
+            </div>
+            <div class="scard__tag">Menos variação manual</div>
+          </article>
+
+          <article class="scard scard--hot">
+            <div class="scard__icon" aria-hidden="true">📂</div>
+            <div class="scard__title">Arquivos e evidências organizados</div>
+            <div class="scard__desc">
+              Os documentos são organizados automaticamente e o processo gera evidências para facilitar conferência.
+            </div>
+            <div class="scard__tag scard__tag--hot">Mais rastreabilidade</div>
+          </article>
+
+          <article class="scard">
+            <div class="scard__icon" aria-hidden="true">📧</div>
+            <div class="scard__title">Resumo final do processamento</div>
+            <div class="scard__desc">
+              Ao final da execução, você recebe um resumo com o que foi processado e o status do fluxo.
+            </div>
+            <div class="scard__tag">Visão rápida do resultado</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUÇÕES / 4 ROBÔS -->
+    <section class="section" id="solucoes">
+      <div class="container">
+        <div class="section__head">
+          <h2>4 robôs para eliminar dias de trabalho manual todos os meses</h2>
+          <p>
+            Dois processos operacionais são automatizados: oferta de lance e geração de boletos.
+            Ambos funcionam para os módulos Motors e Imóvel, executando os fluxos diretamente nas plataformas.
+          </p>
+        </div>
+
+        <div class="solutions4">
+          <article class="scard">
+            <div class="scard__icon" aria-hidden="true">🚘</div>
+            <div class="scard__title">Ofertar lance — Motors</div>
+            <div class="scard__desc">
+              O robô executa automaticamente a oferta de lances para cotas do módulo Motors, reduzindo esforço operacional.
+            </div>
+            <div class="scard__tag">Execução em escala</div>
+          </article>
+
+          <article class="scard">
+            <div class="scard__icon" aria-hidden="true">🏠</div>
+            <div class="scard__title">Ofertar lance — Imóvel</div>
+            <div class="scard__desc">
+              A mesma lógica é aplicada ao módulo Imóvel, respeitando o fluxo e as regras da operação.
+            </div>
+            <div class="scard__tag">Processo padronizado</div>
+          </article>
+
+          <article class="scard scard--hot">
+            <div class="scard__icon" aria-hidden="true">🚘</div>
+            <div class="scard__title">Gerar boletos — Motors</div>
+            <div class="scard__desc">
+              Geração automática de boletos, organização dos arquivos e envio de resumo final por e-mail.
+            </div>
+            <div class="scard__tag scard__tag--hot">Processo mensal automatizado</div>
+          </article>
+
+          <article class="scard">
+            <div class="scard__icon" aria-hidden="true">🏠</div>
+            <div class="scard__title">Gerar boletos — Imóvel</div>
+            <div class="scard__desc">
+              Automação da geração de boletos para o módulo Imóvel com registro de evidências e organização das pastas.
+            </div>
+            <div class="scard__tag">Organização automática</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="section section--soft" id="planos">
+      <div class="container">
+        <div class="section__head">
+          <h2>Planos por volume de cotas processadas por mês</h2>
+          <p>
+            O que antes consumia horas ou até dias de trabalho manual passa a ser executado automaticamente,
+            com rastreabilidade, evidências e organização do processo.
+          </p>
+          <p>
+            Você paga somente pelo <strong>volume de cotas processadas</strong>.
+          </p>
+          <p class="muted">
+            Cada plano contempla o uso para <strong>1 matrícula</strong>. Para mais matrículas, entre em contato comigo clicando em '🤖 Quero automatizar'.
+          </p>
+        </div>
+
+        <!-- ANCORAGEM DE VALOR -->
+        <div class="plans__cta" style="margin-bottom:24px;">
+          <div>
+            <h3 style="margin:0 0 6px 0;">O custo da automação tende a ser menor que o custo do tempo perdido.</h3>
+            <p class="muted" style="margin:0;">
+              Além da execução, você recebe organização dos arquivos, evidências do processo e resumo final por e-mail.
+            </p>
+          </div>
+        </div>
+
+        <div class="volplans">
+          <article class="volplan">
+            <div class="volplan__top">
+              <span class="volplan__range">Até 200 cotas</span>
+              <div class="volplan__price">R$ 150<span>/mês</span></div>
+              <p class="volplan__desc">
+                Para validar a automação e já reduzir esforço operacional no próximo ciclo.
+              </p>
+            </div>
+            <a class="btn btn--primary volplan__cta" id="ctaPlan200" href="#" rel="nofollow">
+              Quero esse plano
+            </a>
+          </article>
+
+          <article class="volplan volplan--hot">
+            <div class="volplan__top">
+              <span class="volplan__range">201 a 500 cotas</span>
+              <div class="volplan__price">R$ 250<span>/mês</span></div>
+              <p class="volplan__desc">
+                Melhor custo-benefício para quem já sente o peso de uma semana por mês de rotina manual.
+              </p>
+            </div>
+            <a class="btn btn--primary volplan__cta" id="ctaPlan500" href="#" rel="nofollow">
+              Quero esse plano
+            </a>
+          </article>
+
+          <article class="volplan">
+            <div class="volplan__top">
+              <span class="volplan__range">501 a 1.000 cotas</span>
+              <div class="volplan__price">R$ 350<span>/mês</span></div>
+              <p class="volplan__desc">
+                Ideal para operação com volume alto, mais rastreabilidade e menos retrabalho.
+              </p>
+            </div>
+            <a class="btn btn--primary volplan__cta" id="ctaPlan1000" href="#" rel="nofollow">
+              Quero esse plano
+            </a>
+          </article>
+
+          <article class="volplan">
+            <div class="volplan__top">
+              <span class="volplan__range">1.001 a 1.500 cotas</span>
+              <div class="volplan__price">R$ 450<span>/mês</span></div>
+              <p class="volplan__desc">
+                Para operação intensa que precisa reduzir gargalo, padronizar execução e ganhar escala.
+              </p>
+            </div>
+            <a class="btn btn--primary volplan__cta" id="ctaPlan1500" href="#" rel="nofollow">
+              Quero esse plano
+            </a>
+          </article>
+
+          <article class="volplan volplan--neg">
+            <div class="volplan__top">
+              <span class="volplan__range">Acima de 1.500 cotas</span>
+              <div class="volplan__price">Negociado</div>
+              <p class="volplan__desc">
+                Me envie o volume e o cenário da operação para eu montar uma proposta adequada.
+              </p>
+            </div>
+            <a class="btn btn--ghost volplan__cta" id="ctaPlanNeg" href="#" rel="nofollow">
+              Falar para negociar
+            </a>
+          </article>
+        </div>
+
+        <div class="plans__cta">
+          <div>
+            <h3 style="margin:0 0 6px 0;">Você está pagando em tempo o que pode automatizar.</h3>
+            <p class="muted" style="margin:0;">
+              Me diga quantas cotas você processa por mês e quais abas quer rodar.
+            </p>
+          </div>
+          <a class="btn btn--primary" id="ctaWhatsappFinal" href="#" rel="nofollow">
+          🤖 Quero automatizar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section__head">
+          <h2>Como funciona</h2>
+          <p>
+            A operação é simples: você envia a planilha, define o que deve ser processado
+            e o robô executa automaticamente o restante.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__icon">📄</div>
+            <h3>1. Envie o link da planilha</h3>
+            <p>
+              Você envia o link da planilha do Google Sheets com as cotas a serem processadas
+              e informa quais abas devem ser consideradas na execução.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__icon">🔐</div>
+            <h3>2. Conceda a permissão necessária</h3>
+            <p>
+              Basta liberar a permissão de edição na planilha para que o robô possa ler,
+              processar e atualizar os dados quando necessário.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__icon">🤖</div>
+            <h3>3. O robô executa o fluxo</h3>
+            <p>
+              A automação acessa a plataforma, executa as operações e registra evidências
+              do processo de forma padronizada.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__icon">📧</div>
+            <h3>4. Você recebe tudo organizado</h3>
+            <p>
+              Ao final da execução, você recebe um e-mail com o resumo do processamento
+              e os arquivos organizados.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__icon">🔒</div>
+            <h3>5. Autenticação segura</h3>
+            <p>
+              O robô utiliza sua matrícula e senha para acessar a plataforma e executar as operações.
+              As credenciais são utilizadas apenas para a execução do fluxo e acesso às cotas informadas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="cta-final">
+      <div class="container">
+        <div class="plans__cta">
+          <div>
+            <h3 style="margin:0 0 6px 0;">Quer entender se a automação faz sentido para o seu volume?</h3>
+            <p class="muted" style="margin:0;">
+              Me envie a quantidade de cotas e o processo que você executa hoje.
+            </p>
+          </div>
+          <a class="btn btn--primary" id="ctaWhatsappFinal" href="#" rel="nofollow">
+            Quero automatizar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section section--soft" id="sobre">
+      <div class="container">
+        <div class="about">
+          <div class="about__content">
+            <h2>Sobre mim</h2>
+
+            <p class="about__text">
+              Sou Gabriel Ferrari, desenvolvedor focado em automação de processos.
+              Esta solução surgiu a partir de uma necessidade operacional real:
+              reduzir o tempo gasto com tarefas repetitivas, padronizar a execução
+              e entregar mais controle sobre o processo.
+            </p>
+
+            <p class="about__text">
+              Trabalhei com automações no Banco Original e desenvolvi esse projeto
+              com foco em transformar uma rotina manual e demorada em um fluxo automático,
+              organizado e rastreável.
+            </p>
+          </div>
+
+          <!-- ACESSIBILIDADE: alt descritivo -->
+          <img
+            class="about__photo"
+            src="foto.png"
+            alt="Gabriel Ferrari, desenvolvedor de automações"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+
+    <footer class="footer">
+      <div class="container small">
+        © <span id="year"></span> — Criado por Gabriel Filipe Ferrari de Oliveira
+      </div>
+    </footer>
+  </main>
+
+  <!-- SCRIPT PRINCIPAL -->
+  <!-- LOG: manter apenas este script para evitar duplicidade e conflito -->
+  <script src="script.js" defer></script>
+</body>
+</html>
